@@ -1,6 +1,6 @@
 # Proyecto del curso Producción de diseño interactivo
 ---
-El proyecto es una sencilla landing page sobre una cerrajería ficticia que busca promocionar sus servicios, cuenta con un formulario para abrir un chat de whatsapp en la misma ventana del navegador.
+### El proyecto es una sencilla landing page sobre una cerrajería ficticia que busca promocionar sus servicios, cuenta con un formulario para abrir un chat de whatsapp en la misma ventana del navegador.
 ---
 ### ¿Cómo colocar un número de whatsapp para abrir un chat?
 ---

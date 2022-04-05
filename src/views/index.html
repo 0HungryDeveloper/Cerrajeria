@@ -4,46 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap 5 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-        <!-- UIkit CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
-        <!-- Custom -->
-        <link rel="stylesheet" href="style.css">
-        <title>Cerrajería Las Torres</title>
+        <%-include ('partials/header.html') %>
+        <title><%= title%></title>
     </head>
     <body>
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-                <div class="container">
-                    <p></p>
-                    <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <div class="mx-auto"></div>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link text-white">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#about-us" class="nav-link text-white">Sobre nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#services" class="nav-link text-white">Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#questions" class="nav-link text-white">Preguntas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#contact" class="nav-link text-white">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <%-include ('partials/navigation.html') %>
         </header>
         <!-- Banner Image -->
         <div class="banner-image w-100 d-flex justify-content-flex-start align-items-center ps-5 img-fluid">
@@ -97,12 +63,12 @@
                     <div class="card mb-3">
                         <div class="uk-animation-toggle" tabindex="0">
                             <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
-                                <img src="https://lacimacerrajeria.com/wp-content/uploads/2019/10/image_preview-23.jpeg" class="card-img-top" alt="...">
+                                <img src="<%=imgHelp%>" class="card-img-top" alt="<%=textHelp%>">
                                 <div class="card-body">
-                                    <h4 class="card-title text-start">Cerrajero las 24 horas</h4>
+                                    <h4 class="card-title text-start"><%=textHelp%></h4>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate illo deserunt sunt, laborum modi quis non sit odio dicta.</p>
                                     <p class="text-end">
-                                        <a href="#contact" class="btn btn-danger">Contratar</a>
+                                        <a href="/locksmith-help-me" class="btn btn-danger">Contratar</a>
                                     </p>
                                 </div>
                             </div>
@@ -113,13 +79,13 @@
                     <div class="card mb-3">
                         <div class="uk-animation-toggle" tabindex="0">
                             <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
-                                <img src="https://lacimacerrajeria.com/wp-content/uploads/2019/11/residencial.jpeg"
-                                    class="card-img-top" alt="...">
+                                <img src="<%=imgResidential%>"
+                                    class="card-img-top" alt="<%=textResidential%>">
                                 <div class="card-body">
-                                    <h4 class="card-title text-start">Cerrajero Residencial</h4>
+                                    <h4 class="card-title text-start"><%=textResidential%></h4>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate illo deserunt sunt, laborum modi quis non sit odio dicta.</p>
                                     <p class="text-end">
-                                        <a href="#contact" class="btn btn-danger">Contratar</a>
+                                        <a href="/residential-locksmith" class="btn btn-danger">Contratar</a>
                                     </p>
                                 </div>
                             </div>
@@ -132,13 +98,13 @@
                     <div class="card mb-3">
                         <div class="uk-animation-toggle" tabindex="0">
                             <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
-                                <img src="https://lacimacerrajeria.com/wp-content/uploads/2021/10/5.jpg"
-                                    class="card-img-top" alt="...">
+                                <img src="<%=imgAutomotive%>"
+                                    class="card-img-top" alt="<%=textAutomotive%>">
                                 <div class="card-body">
-                                    <h4 class="card-title text-start">Cerrajero Automotriz</h4>
+                                    <h4 class="card-title text-start"><%=textAutomotive%></h4>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate illo deserunt sunt, laborum modi quis non sit odio dicta.</p>
                                     <p class="text-end">
-                                        <a href="#contact" class="btn btn-danger">Contratar</a>
+                                        <a href="/automotive-locksmith" class="btn btn-danger">Contratar</a>
                                     </p>
                                 </div>
                             </div>
@@ -149,13 +115,13 @@
                     <div class="card mb-3">
                         <div class="uk-animation-toggle" tabindex="0">
                             <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
-                                <img src="https://images.pexels.com/photos/279810/pexels-photo-279810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                    class="card-img-top" alt="...">
+                                <img src="<%=imgLocks%>"
+                                    class="card-img-top" alt="<%=textLocks%>">
                                 <div class="card-body">
-                                    <h4 class="card-title text-start">Instalación de cerraduras</h4>
+                                    <h4 class="card-title text-start"><%=textLocks%></h4>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate illo deserunt sunt, laborum modi quis non sit odio dicta.</p>
                                     <p class="text-end">
-                                        <a href="#contact" class="btn btn-danger">Contratar</a>
+                                        <a href="/locks" class="btn btn-danger">Contratar</a>
                                     </p>
                                 </div>
                             </div>
@@ -252,49 +218,7 @@
             <br>
             <br>
         </div>
-        <section class="bg-dark">
-            <div class="container pt-3">
-                <div class="row">
-                    <div class="col-sm-6 pb-3">
-                        <div class="map-ubication">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14374.442174532738!2d-100.40594630324462!3d25.750389803075592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866296de4b6bb4c7%3A0xd9f908f362fa9fcd!2sCerrajeria%20Torres!5e0!3m2!1ses!2smx!4v1648179285663!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3 class="text-center text-light">Ponte en contacto con nosotros</h3>
-                        <div class="container pt-5">
-                            <div class="row">
-                                <div class="col-sm-6 pb-3">
-                                    <input type="text" class="form-control" placeholder="Nombre" id="username">
-                                </div>
-                                <div class="col-sm-6 pb-3">
-                                    <input type="text" class="form-control" placeholder="Teléfono">
-                                </div>
-                                <div class="col">
-                                    <select class="form-select" id="service">
-                                        <option selected>¿Cómo podemos ayudarte?</option>
-                                        <option value="Cerrajero las 24 horas">Cerrajero las 24 horas</option>
-                                        <option value="Cerrajero Residencial">Cerrajero Residencial</option>
-                                        <option value="Cerrajero Automotriz">Cerrajero Automotriz</option>
-                                        <option value="Instalación de cerraduras">Instalación de cerraduras</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row pt-5">
-                                <p class="text-end">
-                                    <button class="btn btn-danger" onclick="location.href='javascript:openWhatsapp()'">Soliticar información</button>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Footer -->
-        <script src="app.js"></script>
-        <script src="form-whatsapp.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
+        <%-include ('partials/footer.html') %>
+        <script src="/js/app.js"></script>
     </body>
 </html>

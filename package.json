@@ -1,0 +1,29 @@
+{
+  "name": "locksmith",
+  "version": "1.0.0",
+  "description": "--- ### El proyecto es una sencilla landing page sobre una cerrajería ficticia que busca promocionar sus servicios, cuenta con un formulario para abrir un chat de whatsapp en la misma ventana del navegador. --- ### ¿Cómo colocar un número de whatsapp para abrir un chat? --- > Se debe editar el archivo form-whatsapp.js y modificar esta línea de código --- `window.location.href = \"https://wa.me/52181##########?text=Hola, mi nombre es \" + username + \". Quisiera información sobre \" + service`",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "locksmith": "nodemon src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0HungryDeveloper/Cerrajeria.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0HungryDeveloper/Cerrajeria/issues"
+  },
+  "homepage": "https://github.com/0HungryDeveloper/Cerrajeria#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
